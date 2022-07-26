@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Luciano Casacci" />
+    <meta name="keywords" content="banco" />
+    <meta name="description" content="banco" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/5a53958b9a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>RollingBank</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid paddingNavbar">
+          <a class="navbar-brand" id="letra" href="index.html">RollingBank</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/quienesSomos.html"
+                  >¿Quienes Somos?</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/precios.html">Precios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/seguridad.html">Seguridad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/robo.html">Robo o Extravio</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/banner/bitcoin.jpg"
+                class="d-block w-100 img-banner-responsive img"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/banner/cajero.jpg"
+                class="d-block w-100 img-banner-responsive img"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/banner/dolar.jpg"
+                class="d-block w-100 img-banner-responsive img"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="container">
+        <article class="row my-5 justify-content-center">
+          <aside
+            class="col-sm-12 col-md-4 col-lg-3 my-2 shadow mb-5 bg-body rounded"
+          >
+            <div class="card text-center">
+              <div class="card-body">
+                <i class="fa-regular fa-handshake text-danger fs-1"></i>
+                <h5 class="card-title">Sin sorpresas</h5>
+                <p class="card-text">
+                  Somos transparentes, <br />
+                  no vas a encontrar letra chica.
+                </p>
+              </div>
+            </div>
+          </aside>
+          <aside
+            class="col-sm-12 col-md-4 col-lg-3 my-2 asideMedio shadow mb-5 bg-body rounded"
+          >
+            <div class="card text-center">
+              <div class="card-body">
+                <i class="fa-solid fa-scale-balanced text-primary fs-1"></i>
+                <h5 class="card-title">Aprobado</h5>
+                <p class="card-text">
+                  Estamos autorizados y regulados por el Banco Central.
+                </p>
+              </div>
+            </div>
+          </aside>
+          <aside
+            class="col-sm-12 col-md-4 col-lg-3 my-2 shadow mb-5 bg-body rounded"
+          >
+            <div class="card text-center">
+              <div class="card-body">
+                <i class="fa-solid fa-dollar-sign text-success fs-1"></i>
+                <h5 class="card-title">Sin costos</h5>
+                <p class="card-text">
+                  Todas tus operaciones diarias estan <br />
+                  incluidas.
+                </p>
+              </div>
+            </div>
+          </aside>
+        </article>
+      </section>
+      <section class="container">
+        <article class="row">
+          <article class="col-sm-12 col-md-6 col-lg-4 containerImg">
+            <img
+              src="img/iphone-illustration-sec.png"
+              class="mb-5"
+              alt="phone"
+              width="100%"
+            />
+          </article>
+          <article class="col-sm-12 col-md-6 col-lg-8 mainCol containerCol">
+            <h3>Tu seguridad como prioridad</h3>
+            <h6 class="display fs-5 fw-light">
+              Seguimos las mejores prácticas en cyberseguridad sin complicarte
+              tu operación diaria.
+            </h6>
+            <div class="row my-5">
+              <div class="col-sm-12 col-md-6 col-lg-6 my-4">
+                <i class="fa-regular fa-eye text-danger fs-2"></i>
+                <h3>Biometría</h3>
+                <h6 class="display fs-6 fw-normal">
+                  Nuestra tecnología te permite acceder a tu cuenta usando tu
+                  huella digital o tu cara.
+                </h6>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6 my-4">
+                <i class="fa-solid fa-scale-balanced fs-2 text-primary"></i>
+                <h3>Segundo factor</h3>
+                <h6 class="display fs-6 fw-normal">
+                  Usamos un token invisible para todas las operaciones que
+                  hagas.
+                </h6>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6 my-4">
+                <i class="fas fa-laptop-house fs-2 text-info"></i>
+                <h3>Personal</h3>
+                <h6 class="display fs-6 fw-normal">
+                  Usamos un token invisible para todas las operaciones que
+                  hagas.
+                </h6>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6 my-4">
+                <i class="fas fa-microchip fs-2 text-success"></i>
+                <h3>100% Encriptado</h3>
+                <h6 class="display fs-6 fw-normal">
+                  Usamos un token invisible para todas las operaciones que
+                  hagas. Todas las transacciones son encriptadas para tu mayor
+                  seguridad.
+                </h6>
+              </div>
+            </div>
+          </article>
+        </article>
+      </section>
+      <section
+        class="paddingMain bg-primary text-center text-light justify-content-center"
+      >
+        <h2 class="display-4">RollingBank te esta esperando</h2>
+        <h6 class="display-6 fs-5">
+          Bajá la app y viví una nueva experiencia. Empezá creando tu cuenta
+          sólo con tu DNI.
+        </h6>
+        <article class="row justify-content-center">
+          <div class="col-12 col-lg-6 my-2">
+            <a href="#"
+              ><img src="img/badge-apple-store.svg" class="my-1" alt=""
+            /></a>
+            <a href="#"
+              ><img src="img/google-play-badge-bb.svg" class="my-1" alt=""
+            /></a>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="text-light paddingFooter justify-content-center responsive">
+      <div class="paddingRolling my-1">
+        <div class="col-12 col-md-5 col-lg-4 my-2">
+          <a href="index.html" class="navbar-brand mx-3" id="letra">RollingBank</a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram text-secondary"></i></a>
+          <a href="https://www.twitter.com/" target="_blank"><i class="bi bi-twitter mx-1 text-secondary"></i></a>
+          <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook text-secondary"></i></a>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-5 col-lg-2 my-2 mx-2">
+          <h5 class="text-secondary">Navegación</h5>
+          <div class="row s">
+            <a
+              href="pages/quienesSomos.html"
+              class="fs-6 text-secondary text-decoration-none"
+              >¿Quienes Somos?</a
+            >
+            <a
+              href="pages/precios.html"
+              class="fs-6 text-secondary text-decoration-none"
+              >Precios</a
+            >
+            <a
+              href="pages/seguridad.html"
+              class="fs-6 text-secondary text-decoration-none"
+              >Seguridad</a
+            >
+            <a
+              href="pages/quienesSomos.html"
+              class="fs-6 text-secondary text-decoration-none"
+              >Ayuda</a
+            >
+            <a
+              href="pages/robo.html"
+              class="fs-6 text-secondary text-decoration-none"
+              >Robo o extravio</a
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-5 col-lg-2 my-2 mx-2">
+          <h5 class="text-secondary">Legales</h5>
+          <div class="row">
+            <a
+              href="https://servicioscf.afip.gob.ar/publico/abc/ABCpaso2.aspx?id_nivel1=563&id_nivel2=567&id_nivel3=2702&p=R%C3%A9gimen%20de%20precios%20de%20transferencia%20RG%204717/2020"
+              class="fs-6 text-secondary text-decoration-none"
+              >Regimen de transparencia</a
+            >
+            <a
+              href="http://www.bcra.gov.ar/BCRAyVos/Preg-Frec-A-quien-se-considera-Usuario-de-Servicios-financieros.asp#:~:text=Se%20considera%20usuario%20de%20servicios%20financieros%20a%20las%20personas%20humanas,sin%20incorporarlos%20a%20su%20actividad"
+              class="fs-6 text-secondary text-decoration-none"
+              >Usuario bancario</a
+            >
+            <a
+              href="https://blogs.elconfidencial.com/economia/tribuna/2019-05-21/conducta-supervision-bancos-espana_2012282/"
+              class="fs-6 text-secondary text-decoration-none"
+              >Conducta bancaria</a
+            >
+            <a
+              href="https://www.crea.org.ar/4-1-estados-contables/#:~:text=Los%20estados%20contables%20son%20informes,empresa%20en%20un%20per%C3%ADodo%20determinado."
+              class="fs-6 text-secondary text-decoration-none"
+              >Estados contables</a
+            >
+            <a
+              href="https://terminosycondicionesdeusoejemplo.com/"
+              class="fs-6 text-secondary text-decoration-none"
+              >Terminos y condiciones</a
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-5 col-lg-2 my-2 mx-2">
+          <a href="http://www.bcra.gob.ar/BCRAyVos/usuarios_financieros.asp"
+            ><img
+              src="img/usuariosfinancieros.png"
+              class="cover"
+              width="50%"
+              alt=""
+          /></a>
+        </div>
+        <div class="col-12 col-md-5 col-lg-2 my-2 mx-2">
+          <h5 class="text-secondary">Unite</h5>
+          <a href="#"
+            ><img
+              src="img/badge-apple-store.svg"
+              class="justify-content-center my-2"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="img/google-play-badge-bb.svg"
+              class="justify-content-center my-2"
+              alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
